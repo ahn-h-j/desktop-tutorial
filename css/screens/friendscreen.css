@@ -1,0 +1,25 @@
+/* 2번쨰 장 회색부분 */
+#friends-display-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  background-color: #fafafa;
+  margin-bottom: 10px;
+}
+#friends-display-link svg {
+  color: rgba(0, 0, 0, 0.3);
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+.friends-screen__channel-header {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #ced4da;
+  display: flex;
+  justify-content: space-between;
+  color: #ced4da;
+}

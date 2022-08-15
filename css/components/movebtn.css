@@ -1,0 +1,24 @@
+.btn_move {
+  top: 20px;
+  opacity: 0;
+}
+#user_btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+#chat_btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+#find_btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+#more_btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
