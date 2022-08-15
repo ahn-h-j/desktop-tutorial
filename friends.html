@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <!-- wifi-img -->
+        <svg
+          width="16"
+          height="12"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 512"
+        >
+          <path
+            d="M319.1 351.1c-35.35 0-64 28.66-64 64.01s28.66 64.01 64 64.01c35.34 0 64-28.66 64-64.01S355.3 351.1 319.1 351.1zM320 191.1c-70.25 0-137.9 25.6-190.5 72.03C116.3 275.7 115 295.9 126.7 309.2C138.5 322.4 158.7 323.7 171.9 312C212.8 275.9 265.4 256 320 256s107.3 19.88 148.1 56C474.2 317.4 481.8 320 489.3 320c8.844 0 17.66-3.656 24-10.81C525 295.9 523.8 275.7 510.5 264C457.9 217.6 390.3 191.1 320 191.1zM630.2 156.7C546.3 76.28 436.2 32 320 32S93.69 76.28 9.844 156.7c-12.75 12.25-13.16 32.5-.9375 45.25c12.22 12.78 32.47 13.12 45.25 .9375C125.1 133.1 220.4 96 320 96s193.1 37.97 265.8 106.9C592.1 208.8 600 211.8 608 211.8c8.406 0 16.81-3.281 23.09-9.844C643.3 189.2 642.9 168.1 630.2 156.7z"
+          />
+        </svg>
+      </div>
+
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+
+      <div class="status-bar__column">
+        <span> 110% </span>
+        <!-- battery-bar-img -->
+        <svg
+          class="status-bar__column__battery-bar"
+          width="16"
+          height="16"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 576 512"
+        >
+          <path
+            d="M448 320H96V192H448V320zM0 176C0 131.8 35.82 96 80 96H464C508.2 96 544 131.8 544 176V192C561.7 192 576 206.3 576 224V288C576 305.7 561.7 320 544 320V336C544 380.2 508.2 416 464 416H80C35.82 416 0 380.2 0 336V176zM80 160C71.16 160 64 167.2 64 176V336C64 344.8 71.16 352 80 352H464C472.8 352 480 344.8 480 336V176C480 167.2 472.8 160 464 160H80z"
+          />
+        </svg>
+        <!-- bolt-img -->
+        <svg
+          width="16"
+          height="16"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <!-- user -->
+        <form action="friends.html" method="get">
+        <li class="nav__btn"><a class="nav__link" href="#"></a>
+        <svg 
+        width="25"
+        height="25"
+        xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 512 512">
+        <path d="M256 288c79.53 0 144-64.47 144-144s-64.47-144-144-144c-79.52 0-144 64.47-144 144S176.5 288 256 288zM351.1 320H160c-88.36 0-160 71.63-160 160c0 17.67 14.33 32 31.1 32H480c17.67 0 31.1-14.33 31.1-32C512 391.6 440.4 320 351.1 320z"/>
+        </svg>
+      </li><input class="btn_move" id="user_btn" type="submit" />
+      </form>
+        <!-- comment -->
+        <form action="chats.html" method="get">
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__notification">1</span>
+          </a>
+          <svg
+          width="30"
+          height="30"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+          />
+        </svg>
+        </li><input class="btn_move" id="chat_btn" type="submit" />
+      </form>
+          <!-- search -->
+        <form action="find.html" method="get">
+        <li class="nav__btn"><a class="nav__link" href="#"></a> <svg
+          width="30"
+          height="30"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+        </li><input class="btn_move" id="find_btn" type="submit" />
+       </form>
+          <!-- eclipes -->
+          <form action="more.html" method="get">
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav_dot"></span>
+          </a> 
+          <svg
+          width="30"
+          height="30"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+          />
+        </svg>
+      </li><input class="btn_move" id="more_btn" type="submit" />
+       </form>
+      </ul>
+    </nav>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <!-- search -->
+        <span>
+        <svg
+        width="25"
+        height="25"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </span>
+        <!-- music -->
+        <span>
+          <svg 
+          width="25"
+        height="25"
+          xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+          </svg>
+        </span>
+        <!-- gear -->
+        <span>
+          <svg 
+          width="25"
+        height="25"
+           xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </span>
+      </div>
+    </header>
+
+    <a id="friends-display-link">
+      <!-- info-circle -->
+      <svg
+        width="15px"
+        height="15px"
+         xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+       </svg>
+       Friends' Names Display  
+       <!-- arrow-left -->
+       <svg 
+        width="15px"
+        height="15px"
+        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+      </svg> 
+    </a>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <!-- profile-picture -->
+          <!-- profile & name -->
+          <img 
+          src="http://v3wall.com/wallpaper/1680_1050/1007/1680_1050_20100710092404327901.jpg"
+          class="user-component__avatar user-component__avatar--xl"/>
+          <div class="user-component__text">
+            <h4 class="user-component__title">Ahn</h4>
+          </div>
+        </div>
+  
+        <div class="user-component__column"></div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <!-- 회색 채널 -->
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <svg 
+          width="15px"
+          height="15px"
+          xmlns="http://www.w3.org/2000/svg" 
+          class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+          </svg> 
+        </div>   
+        <div class="user-component__column-line">
+          <!-- channel -->
+        <div class="user-component__column">
+
+          <img 
+          src="https://play-lh.googleusercontent.com/cf3DwPLbS8Z55sDvUSTQ6PL1goPdm8KbZ81g4TEUAaeUh5LDhkzdjxKQ2RX6BGpv0x4=w240-h480-rw"
+          class="user-component__avatar user-component__avatar--sm"/>
+          
+        <div class="user-component__text">
+          <h4 class="user-component__title">Channel</h4>
+        </div>
+      </div>
+      <!-- 2> -->
+      <div class="user-component__column">
+        <span>2    <svg 
+          width="15px"
+          height="15px"
+          xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+        </svg> </span>
+      </div>
+    </div>
+      </div>
+    </main>
+    
+    <script
+      src="https://kit.fontawesome.com/3f1b394168.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
